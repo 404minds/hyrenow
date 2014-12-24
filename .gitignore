@@ -55,3 +55,6 @@ target/
 
 # OS X temporary files
 .DS_Store
+
+# Bower Components
+/bower_components/*
