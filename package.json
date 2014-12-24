@@ -1,0 +1,32 @@
+{
+  "name": "hyrenow",
+  "version": "0.1.0",
+  "description": "A hiring marketplace",
+  "main": "html/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/404minds/hyrenow.git"
+  },
+  "keywords": [
+    "hyrenow",
+    "jobs",
+    "employment",
+    "hiring"
+  ],
+  "author": "Tushar Agarwal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/404minds/hyrenow/issues"
+  },
+  "homepage": "https://github.com/404minds/hyrenow",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "dependencies": {
+    "grunt-contrib-sass": "^0.8.1"
+  }
+}
