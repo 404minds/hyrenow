@@ -59,5 +59,9 @@ target/
 # Bower Components
 /bower_components/*
 
-# CSS files
+# Assets files
+.sass-cache
 /assets/css/*
+
+# Node Modules
+node_modules
