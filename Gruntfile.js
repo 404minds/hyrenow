@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 	    sass: {
 		dist: {
 		    files: {
-			'assets/css/app.css': 'assets/scss/app.scss'
+			'assets/css/app.css': 'assets/scss/*.scss'
 		    }
 		}
 	    },
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
      });
 
     // Load the plugin that provides the "sass" task.
-    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Default task(s).

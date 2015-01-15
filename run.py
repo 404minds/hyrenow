@@ -1,3 +1,8 @@
-#!env_1/bin/python
+### !env_1/bin/python
 from app import app
-app.run(debug=True)
+# from werkzeug.contrib.fixers import ProxyFix
+# app.wsgi_app = ProxyFix(app.wsgi_app)
+# app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
+

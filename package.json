@@ -24,9 +24,10 @@
   "homepage": "https://github.com/404minds/hyrenow",
   "devDependencies": {
     "grunt": "^0.4.5",
-    "grunt-contrib-watch": "^0.6.1"
+    "grunt-contrib-watch": "^0.6.1",
+    "node-sass": "~1.2.3",
+    "grunt-sass": "~0.17.0"
   },
   "dependencies": {
-    "grunt-contrib-sass": "^0.8.1"
   }
 }
