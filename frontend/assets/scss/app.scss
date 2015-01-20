@@ -1,0 +1,236 @@
+    /**
+    * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+    * http://cssreset.com
+    */
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+    display: block;
+    }
+    body {
+    line-height: 1;
+    }
+    ol, ul {
+    list-style: none;
+    }
+    blockquote, q {
+    quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+    content: '';
+    content: none;
+    }
+    table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+.main-container {
+	margin-top: 102px;
+
+	.hy-logo-wrapper{
+		.hy-logo{
+			display: block;
+			font-family: GillSans;
+			color:rgba(41, 98, 255, 0.54);
+			font-size: 90px; /* Approximation due to font substitution */
+			font-weight: 300;
+			text-align: left;
+			margin-bottom: 25px;
+		}
+		.hy-tagline {
+			font-family: GillSans;
+			color:rgba(0, 0, 0, 0.54);
+			font-size: 28px; /* Approximation due to font substitution */
+			font-weight: 300;
+			text-align: left;
+		}
+	}					
+
+	.hy-all-benefits{
+		.hy-benefit{
+			margin-top: 70px;
+			.benefit-circle {
+				display: table-cell;
+				margin: 0 auto;
+				border-radius: 50%;
+				background-color:#c0c0c0;
+				width: 52px;
+				height: 52px;
+			}
+			.benefit-desc{
+				vertical-align: middle;
+				display: table-cell;
+				font-family: Roboto;
+				color:rgba(0, 0, 0, 0.54);
+				font-size: 20px; /* Approximation due to font substitution */
+				font-weight: 300;
+				text-align: left;
+			}
+		}
+	}
+
+	.sign-up-wrapper{
+		.sign-up-heading{
+			span{
+				font-family: Roboto;
+				color:rgba(0, 0, 0, 0.87);
+				font-size: 24px; /* Approximation due to font substitution */
+				font-weight: 300;
+				text-align: left;
+			}
+		}
+
+		.sign-up-linkedin-wrapper{
+			margin-top: 25px;
+			.sign-up-linkedin{
+				vertical-align: middle;
+				text-align: center;
+				display: table-cell;
+				border-radius: 3px;
+				border-width: 1px;
+				border-color:#cfd8dc;
+				border-style: solid;
+				background-color:#007bb6;
+				width: 429px;
+				height: 58px;
+				span {
+					font-family: Roboto;
+					color:#ffffff;
+					font-size: 24px; /* Approximation due to font substitution */
+					font-weight: 400;
+					text-align: left;
+				}
+			}
+		}
+		.separating-or{
+				text-align: center;
+				margin: 20px 0px;
+				span{
+					font-family: Roboto;
+					color:rgba(0, 0, 0, 0.87);
+					font-size: 22px; /* Approximation due to font substitution */
+					font-weight: 300;
+			}
+		}
+
+		.sign-up-manual{
+			.sign-up-input{
+				border-radius: 3px;
+				border-width: 1px;
+				border-color:#cfd8dc;
+				border-style: solid;
+				width: 428px;
+				height: 58px;
+			}
+			.radio-btn-heading {
+				display: block;
+				font-family: Roboto;
+				color:rgba(0, 0, 0, 0.54);
+				font-size: 20px; /* Approximation due to font substitution */
+				font-weight: 400;
+				margin-bottom: 20px;
+			}
+
+			.user-type {
+				font-family: Roboto;
+				color:rgba(0, 0, 0, 0.54);
+				font-size: 20px; /* Approximation due to font substitution */
+				font-weight: 400;
+				margin-bottom: 40px;
+			}
+			.sign-up-submit{
+				padding: 20px 50px;
+				display: table-cell;
+				border-radius: 3px;
+				border-width: 1px;
+				border-color:#cfd8dc;
+				border-style: solid;
+				background-color:#309f4c;
+				span{
+					font-family: Roboto;
+					color:#ffffff;
+					font-size: 24px; /* Approximation due to font substitution */
+					font-weight: 400;
+					text-align: left;
+				}
+			}
+		}
+	
+	.already-a-member{
+		margin-top: 60px;
+		.default-grey{
+		font-family: Roboto;
+		color:#818181;
+		font-size: 20px; /* Approximation due to font substitution */
+		font-weight: 400;
+		text-align: left;	
+		}
+		.default-blue{
+			font-family: Roboto;
+			color:#008be7;
+			font-size: 20px; /* Approximation due to font substitution */
+			font-weight: 400;
+			text-align: left;
+		}
+	}
+
+	}
+}
+
+.default-footer {
+		margin-top: 40px;
+	.footer-border {
+		background-color:#e7e7e7;
+		height: 2px;
+	}
+
+	.footer-links {
+		margin-top: 20px;
+		float:left;
+		width:100%;
+		ul {
+			height: 50px;
+		   float:left;
+		   list-style:none;
+		   position:relative;
+		   left:50%;
+		   text-align:center;
+			li {
+				margin-left: 15px;
+				display:block;
+			   	float:left;
+			   	list-style:none;
+			   	position:relative;
+			   	right:50%;
+				a {
+				display: block;
+				font-family: Roboto;
+				color:rgba(0, 0, 0, 0.87);
+				font-size: 16px; /* Approximation due to font substitution */
+				font-weight: 300;
+				}
+		 	}
+		}
+	}
+}
