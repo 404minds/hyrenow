@@ -7,28 +7,27 @@
 <div class="container">
     <div class="row main-container">
     	
-        <div class="large-6 columns hy-desc">
+        <div class="large-6  columns hy-desc small-only-text-center medium-only-text-center">
     	   <div class="hy-logo-wrapper">
-                <span class="hy-logo">HyreNow</span>
-                <span class="hy-tagline">The Hyring Market Place</span>
+                <img src="assets/images/hy-logo.svg" class="hy-logo"/>
             </div>
-            <div class="hy-all-benefits">
+            <div class="hy-all-benefits hide-for-small-only hide-for-medium-only">
                 <div class="hy-benefit">
                        <div class="benefit-circle"></div>
-                        <span class="benefit-desc">Get a job within a week!</span>
+                        <span class="benefit-desc">Instant Talent Search.</span>
                 </div>
                 <div class="hy-benefit">
                     <div class="benefit-circle"></div>
-                    <span class="benefit-desc">Get a job within a week!</span>
+                    <span class="benefit-desc">Comprihensive Statistics. </span>
                 </div>
                 <div class="hy-benefit">
                     <div class="benefit-circle"></div>
-                    <span class="benefit-desc">Get a job within a week!</span>
+                    <span class="benefit-desc">Intelligent Recommendations.</span>
                 </div>                    
             </div>
         </div>
     	
-        <div class="large-6 columns sign-up-wrapper">
+        <div class="large-5 columns sign-up-wrapper">
     	   
            <div class="sign-up-heading">
                 <span>SIGN UP</span>
@@ -41,20 +40,14 @@
             <div class="separating-or">
                 <span>OR</span>
             </div>
-    	
+
             <div class="sign-up-manual">
-                <input type="text" class="sign-up-input" placeholder="Name"/>
-                <input type="text" class="sign-up-input" placeholder="Email"/>
-                <input type="text" class="sign-up-input" placeholder="Password"/>
-                
-                <span class="radio-btn-heading">I am ..</span>
-                <input type="radio" name="user_type" value="candidate"> <span class="user-type">Looking for a job</span>
-                <input type="radio" name="user_type" value="company" class="user-type"> <span class="user-type">Offering jobs </span>
-
-                <div class="sign-up-submit">
-                    <span>Sign Up</span>
-                </div>
-
+                <form data-abide id="sign-up-manual">
+                        <input type="text" class="sign-up-input" id="sign-up-name" placeholder="Name" required/>
+                    <input type="email" class="sign-up-input" id="sign-up-email" placeholder="Email" required/>
+                    <input type="password" class="sign-up-input" id="sign-up-password" placeholder="Password" required/>
+                        <button type="submit" class="sign-up-submit">Sign Up</button>
+                </form>
             </div>
 
             <div class="already-a-member">
