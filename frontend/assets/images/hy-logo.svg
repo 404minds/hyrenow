@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="351px" height="129px">
+<style type="text/css"><![CDATA[
+.style0 {
+  font-size: 90px;
+  font-family: "GillSans-Light";
+  fill: rgb(41,98,255);
+}
+.style1 {
+  font-size: 28px;
+  font-family: "GillSans-Light";
+  fill: rgb(0,0,0);
+}
+]]></style>
+<text opacity="0.54" transform="translate(-6.67188,62.0625)" class="style0">
+<tspan x="0 59 101 130 175 234 283" y="0.00">
+HyreNöw</tspan>
+</text>
+<text opacity="0.54" transform="translate(0.0625,122.281)" class="style1">
+<tspan x="0 14 30 44 50 65 78 87 94 110 126 132 155 168 177 190 204 213 229 236 249 261 275" y="0.00">
+The hyring marketplace.</tspan>
+</text>
+</svg>
