@@ -1,0 +1,218 @@
+<script type="text/templates" id="user_profile_base">
+<!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<div class="container">
+    <div id="header_wrapper">
+    </div>
+    
+    <div class="main-container">
+	    <div class="row user-cover">
+	    	<div class="user-cover-main">
+	    		<div class="user-cover-pic large-4 columns">
+	    			<span class="user-cover-letter">K</span>
+	    		</div>
+	    		<div class="user-cover-details large-8 columns">
+	    			<span class="user-cover-name">Kshitij Mittal</span>
+	    			<span class="user-cover-onelnr">Full Stack Developer @ hyrenow</span>
+	    			<button class="large radius">Change Photo</button>
+	    		</div>
+	 	   	</div>
+	    	<div class="user-cover-desc">
+	    		<textarea class="user-edit-desc">Describe Yourself in 140 characters</textarea>
+	    		<span class="desc-ltr-left">140</span>
+	    	</div>
+	    </div>
+	        
+	    <div class="user-profile-edit-container">
+	    	<div class="user-profile-edit-wrapper">
+
+		    	<div class="row profile-section">
+		    		<div class="heading">
+		    			<span>Job Preference</span>
+		    		</div>
+		    		<div class="content">
+		    			<form data-abide id="job-pref-form">
+			    			<div class="large-6 columns">
+			                    <input type="text" class="hynow-input" id="login-email" placeholder="Current Location" required/>
+			                    <input type="text" class="hynow-input" id="login-password" placeholder="&#8377; Current Annual Salary" required/>
+		                    </div>
+		                    
+		                    <div class="large-6 columns">
+			                    <input type="text" class="hynow-input" id="login-email" placeholder="Desired Location" required/>
+			                    <input type="text" class="hynow-input" id="login-password" placeholder="&#8377; Expected Annual Salary" required/>
+		                    </div>
+		                    <div class="form-buttons">
+		                        <button type="submit" class="small radius disabled"><span>Save</span></button>
+		                        <button class="small secondary radius disabled"><span>Cancel</span></button>
+	                        </div>
+	                </form>
+		    		</div>
+		    	</div>
+
+		    	<div class="row profile-section">
+		    		<div class="heading">
+		    			<span>Education & Experience</span>
+		    		</div>
+		    		<div class="content">
+		    			<form data-abide id="job-pref-form">
+			    			<div class="large-6 columns">
+			                    <input type="text" class="hynow-input" id="login-email" placeholder="Company/Institute" required/>
+		                    </div>
+		                    
+		                    <div class="large-6 columns">
+			                    <input type="text" class="hynow-input" id="login-email" placeholder="Designation/Course" required/>
+		                    </div>
+		                    <div class="large-12 columns">
+		                    	<textarea placeholder="Description" class="hynow-desc-input"/>
+		                    </div>
+		                    <div class="form-buttons">
+		                        <button type="submit" class="small radius disabled"><span>Save</span></button>
+		                        <button class="small secondary radius disabled"><span>Cancel</span></button>
+	                        </div>
+	                </form>
+		    		</div>
+		    	</div>
+
+		    	<div class="row profile-section">
+		    		<div class="heading">
+		    			<span>Skills</span>
+		    		</div>
+		    		<div class="content">
+		    			<form data-abide id="job-pref-form">
+
+			    			<div class="large-6 columns">
+			                    <input type="text" class="hynow-input" id="login-email" placeholder="Add a Skill" required/>
+		                    </div>
+
+		                    <div class="tag-wrapper">
+		                    	<div class="tag"><span>Python </span><i class="fa fa-close"></i></div>
+		                    	<div class="tag"><span>Javascript </span><i class="fa fa-close"></i></div>
+		                    	<div class="tag"><span>Python </span><i class="fa fa-close"></i></div>
+		                    	<div class="tag"><span>Javascript </span><i class="fa fa-close"></i></div>
+		                    </div>
+
+		                
+		                    <div class="form-buttons">
+		                        <button type="submit" class="small radius disabled"><span>Save</span></button>
+		                        <button class="small secondary radius disabled"><span>Cancel</span></button>
+	                        </div>
+
+	                </form>
+		    		</div>
+		    	</div>
+
+  				<div class="row profile-section">
+		    		<div class="heading">
+		    			<span>Projects</span>
+		    		</div>
+		    		<div class="content">
+		    			<form data-abide id="projects-form">
+			    			<div class="large-6 columns">
+			                    <input type="text" class="hynow-input" id="" placeholder="Project Name" required/>
+		                    </div>
+		                    
+		                    <div class="large-6 columns">
+			                    <input type="text" class="hynow-input" id="" placeholder="URL" required/>
+		                    </div>
+		                    <div class="large-12 columns">
+		                    	<textarea placeholder="Description" class="hynow-desc-input"/>
+		                    </div>
+		                    <div class="form-buttons">
+		                        <button type="submit" class="small radius disabled"><span>Save</span></button>
+		                        <button class="small secondary radius disabled"><span>Cancel</span></button>
+	                        </div>
+	                </form>
+		    		</div>
+		    	</div>
+
+				<div class="row profile-section">
+		    		<div class="heading">
+		    			<span>Personal</span>
+		    		</div>
+		    		<div class="content">
+		    			<form data-abide id="personal-form" class="personal-form">
+			    			<div class="large-6 columns">
+			                    <div class="large-4 columns">
+			                    	<span class="input-label">Phone No.</span> 
+			                    </div>
+			                    <div class="large-8 columns">
+			                    	<input type="text" class="hynow-input" id="login-email" placeholder="Phone No." required/>
+			                    </div>
+		                    </div>
+		                    
+		                    <div class="large-6 columns">
+			                    <div class="large-4 columns">
+			                    	<span class="input-label"> DOB </span> 
+			                    </div>
+			                    <div class="large-8 columns">
+			                    	<input type="text" id="datepicker-12" class="hynow-input" placeholder="Date of Birth">
+			                    </div>
+		                    </div>
+		                    <div class="form-buttons">
+		                        <button type="submit" class="small radius disabled"><span>Save</span></button>
+		                        <button class="small secondary radius disabled"><span>Cancel</span></button>
+	                        </div>
+	                	</form>
+		    		</div>
+		    	</div>
+
+		    	<div class="row profile-section">
+		    		<div class="heading">
+		    			<span>Social Links</span>
+		    		</div>
+		    		<div class="content">
+		    			<form data-abide id="job-pref-form">
+			    			<div class="large-6  columns">
+			                    <div>
+				                    <div class="social-icon facebook">
+				                    	<i class="fa fa-facebook-square"></i>
+				                    </div>
+				                    <div class="social-link">
+				                    	<input type="text" class="hynow-input" placeholder="Link to Facebook Profile" required/>
+				                    </div>
+			                    </div>
+			                    <div>
+				                    <div class="social-icon">
+				                    	<i class="fa fa-github-square"></i>
+				                    </div>
+				                    <div class="social-link">
+					                    <input type="text" class="hynow-input" id="login-password" placeholder="Link to GitHub Profile" required/>
+			                    	</div>
+		                    	</div>
+		                    </div>
+		                    
+		                    <div class="large-6  columns">
+			                    <div>
+				                    <div class="social-icon twitter">
+				                    	<i class="fa fa-twitter-square"></i>
+				                    </div>
+				                    <div class="social-link">
+				                    	<input type="text" class="hynow-input" placeholder="Link to Twitter Profile" required/>
+				                    </div>
+			                    </div>
+			                    <div>
+				                    <div class="social-icon">
+				                    	<i class="fa fa-linkedin-square"></i>
+				                    </div>
+				                    <div class="social-link">
+					                    <input type="text" class="hynow-input" id="login-password" placeholder="Link to LinkedIn Profile" required/>
+			                    	</div>
+		                    	</div>
+		                    </div>
+
+		                    <div class="form-buttons">
+		                        <button type="submit" class="small radius disabled"><span>Save</span></button>
+		                        <button class="small secondary radius disabled"><span>Cancel</span></button>
+	                        </div>
+	                </form>
+		    		</div>
+		    	</div>
+
+	    	</div>
+	    </div>
+    </div>
+</div>
+</script>

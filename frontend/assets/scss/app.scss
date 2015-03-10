@@ -1,125 +1,67 @@
-.main-container {
-	margin-top: 51px;
-.hy-desc{
+@import "settings";
+@import "foundation";
+
+.header{
+	position:relative;
+	background-color:  #ffffff;
+	box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.12);
 	.hy-logo-wrapper{
 		display: inline-block;
 		float: none;
+		position: absolute;
+		top:23px;
+		left:32px;
 		.hy-logo{
 			width:100%;
-			height:140px;
-		}
-		
-	}
-}					
-
-	.hy-all-benefits{
-				text-align: left ;
-		.hy-benefit{
-			float: none;
-			display: inline-block;
-			min-width: 320px;
-			margin-top: 70px;
-			.benefit-circle {
-				display: table-cell;
-				margin: 0 auto;
-				border-radius: 50%;
-				background-color:#c0c0c0;
-				width: 52px;
-				height: 52px;
-			}
-			.benefit-desc{
-				vertical-align: middle;
-				display: table-cell;
-				font-family: Roboto;
-				color:rgba(0, 0, 0, 0.54);
-				font-size: 20px;
-				font-weight: 300;
-				text-align: left;
-			}
+			height:23px;
 		}
 	}
 
-	.sign-up-wrapper{
-		.sign-up-heading{
-			span{
-				font-family: Roboto;
-				color:rgba(0, 0, 0, 0.87);
-				font-size: 24px;
-				font-weight: 300;
-				text-align: left;
-			}
+	.notification{
+	  	-moz-border-radius: 50px/50px;
+   		-webkit-border-radius: 50px 50px;
+    	border-radius: 50px/50px;
+    	border:solid 1px #bdbdbd;
+    	width:38px;
+    	height:38px; 
+		.hy-bell{
+			color: #bdbdbd;
 		}
+	}
 
-		.sign-up-linkedin-wrapper{
-			a {
-				text-align: center;
-				display: block;
-				border-radius: 3px;
-				border-width: 1px;
-				border-color:#cfd8dc;
-				font-family: Roboto;
-				font-size: 23px;
-				font-weight: 400;
-				}
+	.profile-icon{
+		-moz-border-radius: 50px/50px;
+   		-webkit-border-radius: 50px 50px;
+    	border-radius: 50px/50px;
+    	width:38px;
+    	height:38px; 
+		img {
+				position:absolute;
+				top:3px;
+				left:30pxpx;
+			    border-radius: 50%;
+			    width: 30px;
+			    height: 30px;
 		}
-		.separating-or{
-				text-align: center;
-				margin: 20px 0px;
-				span{
-					font-family: Roboto;
-					color:rgba(0, 0, 0, 0.87);
-					font-size: 22px;
-					font-weight: 300;
-			}
-		}
+	}
 
-		.sign-up-manual{
-			.sign-up-input{
-				border-radius: 3px;
-				border-width: 1px;
-				border-color:#cfd8dc;
-				border-style: solid;
-				font-size: 20px;
-				width: 100%;
-				height: 54px;
-			}
-			.sign-up-submit{
-				padding: 20px 50px;
-				display: table-cell;
-				border-radius: 3px;
-				border-width: 1px;
-				border-color:#cfd8dc;
-				border-style: solid;
-				background-color:#309f4c;
-				span{
-					font-family: Roboto;
-					color:#ffffff;
-					font-size: 24px;
-					font-weight: 400;
-					text-align: left;
-				}
-			}
-		}
-	
-	.already-a-member{
-		margin-top: 60px;
-		.default-grey{
-		font-family: Roboto;
-		color:#818181;
-		font-size: 20px; 
-		font-weight: 400;
-		text-align: left;	
-		}
-		.default-blue{
+	.profile-name{
+		position: absolute;
+		top:15px;
+		right:33px;
+		span{
 			font-family: Roboto;
-			color:#008be7;
-			font-size: 20px;
+			color:rgba(0, 0, 0, 0.54);
+			font-size: 18px;
 			font-weight: 400;
+			line-height: 42px;
 			text-align: left;
 		}
+		.down-arrow{
+		margin-left:12px;
+		}
 	}
 
-	}
 }
 
 .default-footer {
@@ -159,3 +101,334 @@
 		}
 	}
 }
+
+.main-container {
+	font-family: Roboto;
+	margin-top: 51px;
+.hy-desc{
+	.hy-logo-wrapper{
+		display: inline-block;
+		float: none;
+		.hy-logo{ 
+			width:100%;
+			height:140px;
+		}
+		.hy-logo-middle{
+			width:100%;
+			height:140px;
+			margin-top:150px;
+		}
+		
+	}
+}					
+
+	.hy-all-benefits{
+				text-align: left ;
+		.hy-benefit{
+			float: none;
+			display: inline-block;
+			min-width: 320px;
+			margin-top: 70px;
+			.benefit-circle {
+				display: table-cell;
+				margin: 0 auto;
+				border-radius: 50%;
+				background-color:#c0c0c0;
+				width: 52px;
+				height: 52px;
+			}
+			.benefit-desc{
+				vertical-align: middle;
+				display: table-cell;
+				font-family: Roboto;
+				color:rgba(0, 0, 0, 0.54);
+				font-size: 20px;
+				font-weight: 300;
+				text-align: left;
+			}
+		}
+	}
+
+	.sign-up-wrapper{
+		.sign-up-heading{
+			span{
+				color:rgba(0, 0, 0, 0.87);
+				font-size: 24px;
+				font-weight: 300;
+				text-align: left;
+			}
+		}
+
+		.sign-up-linkedin-wrapper{
+			a {
+				text-align: center;
+				display: block;
+				border-radius: 3px;
+				border-width: 1px;
+				border-color:#cfd8dc;
+				font-family: Roboto;
+				font-size: 23px;
+				font-weight: 400;
+				}
+		}
+		.separating-or{
+				text-align: center;
+				margin: 20px 0px;
+				span{
+					font-family: Roboto;
+					color:rgba(0, 0, 0, 0.87);
+					font-size: 22px;
+					font-weight: 300;
+			}
+		}
+
+
+	}
+	
+
+	.already-a-member{
+		margin-top: 60px;
+		.default-grey{
+		font-family: Roboto;
+		color:#818181;
+		font-size: 20px; 
+		font-weight: 400;
+		text-align: left;	
+		}
+		.default-blue{
+			font-family: Roboto;
+			color:#008be7;
+			font-size: 20px;
+			font-weight: 400;
+			text-align: left;
+		}
+	}
+
+	.hynow-input{
+		border-radius: 3px;
+		border-width: 1px;
+		border-color:#cfd8dc;
+		border-style: solid;
+		font-size: 20px;
+		height: 54px;
+	}
+	.input-label{
+		font-family: Roboto;
+		color:  rgba(0, 0, 0, 0.54);
+		font-size: 20px; /* Approximation due to font substitution */
+		font-weight: 400;
+		text-align: left;
+		line-height: 54px;
+	}
+	.input-label-wrapper{
+		vertical-align: middle;
+		height: 54px;
+		margin-right: 25px;
+	}
+	.hynow-desc-input{
+		border-radius: 3px;
+		border-width: 1px;
+		border-color:  #cfd8dc;
+		border-style: solid;
+		background-color:  #ffffff;
+		height: 118px;
+	}
+	.hynow-submit{
+		padding: 20px 50px;
+		display: table-cell;
+		border-radius: 3px;
+		border-width: 1px;
+		border-color:#cfd8dc;
+		border-style: solid;
+		background-color:#309f4c;
+		span{
+			font-family: Roboto;
+			color:#ffffff;
+			font-size: 24px;
+			font-weight: 400;
+			text-align: left;
+		}
+
+		&.medium{
+			padding: 15px 50px;
+		}
+		&.blue{
+			background-color:#9575cd;
+		}
+	}
+		
+	.login-wrapper{
+		margin-top:80px;
+		.login-heading{
+			margin-bottom:40px;
+			span{
+				font-family: Roboto;
+				color:rgba(0, 0, 0, 0.87);
+				font-size: 24px;
+				font-weight: 300;
+				text-align: left;
+			}
+		}
+	}
+
+	.user-cover {
+		.user-cover-main{
+			display:block;
+			position: relative;
+			.user-cover-pic {
+				border-radius: 50%;
+				background-color:  #bdbdbd;
+				width: 200px;
+				height: 200px;
+				position:relative;
+				display:inline-block;
+				.user-cover-letter {
+					font-family: Roboto;
+					color:  #ffffff;
+					font-size: 88px; /* Approximation due to font substitution */
+					font-weight: 400;
+					position: absolute;
+					top:17%;
+					left:36%;
+				}
+			}
+			.user-cover-details{
+				position: absolute;
+				display:inline-block;
+				max-width: 65%;
+				margin-left: 52px;
+				.user-cover-name{
+					font-family: Roboto;
+					color:  #000000;
+					font-size: 38px; /* Approximation due to font substitution */
+					font-weight: 400;
+					text-align: left;
+					display: block;
+				}
+				.user-cover-onelnr{
+					display: block;
+					font-family: Roboto;
+					color:  rgba(0, 0, 0, 0.54);
+					font-size: 20px; /* Approximation due to font substitution */
+					font-weight: 400;
+					text-align: left;
+					padding-bottom: 25px;
+				}
+				.user-change-pic{
+					border-radius: 3px;
+					border-width: 1px;
+					border-color:  #cfd8dc;
+					border-style: solid;
+					background-color:  #673ab7;
+					width: 218px;
+					height: 58px;
+				}
+			}
+		}	
+		.user-cover-desc{
+				text-align: right;
+				width:70%;
+				margin: 0 auto;
+			.user-edit-desc {
+				border-radius: 3px;
+				border-width: 1px;
+				border-color:  #cfd8dc;
+				border-style: solid;
+				background-color:  #ffffff;
+				height: 48px;
+			}
+			.desc-ltr-left{
+				font-family: Roboto;
+				color:  rgba(0, 0, 0, 0.54);
+				font-size: 12px; /* Approximation due to font substitution */
+				font-weight: 400;
+				text-align: right;
+			}
+		}
+	}
+
+	.user-profile-edit-container{
+		min-height: 400px;
+		background-color: #f5f5f5;
+		padding-top: 48px;
+
+		.user-profile-edit-wrapper{
+			width:62%;
+			margin:0 auto;
+			.profile-section{
+				.heading {
+					font-family: Roboto;
+					color:  rgba(0, 0, 0, 0.87);
+					font-size: 24px; /* Approximation due to font substitution */
+					font-weight: 500;
+					text-align: left;
+					border-bottom: solid 1px #dcdcdc;
+					margin-bottom: 23px;
+				}
+
+				.content{
+					form{
+						.social-link{
+							display: inline-block;
+						}
+						.social-icon{
+							display:inline-block;
+							float:left;
+							margin-right: 23px;
+							i{
+							opacity:0.54;
+								font-size:60px;
+								font-weight:400;
+								text-align:left;
+							}
+
+							&.facebook{
+								color:rgba(72, 98, 163, 0.54);
+							}
+
+							&.github{
+							}
+
+							&.twitter{
+								color:rgba(89, 173, 236, 0.54);
+							}
+
+							&.linkedin{
+							}
+						}
+						.form-buttons{
+							text-align: right;
+							button{
+								margin-left:20px; 
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.tag-wrapper{
+		display: inline-block;
+		.tag{
+			padding: 16px 13px 16px 13px;
+			border-radius: 3px;
+			background-color:  #e7e7e7;
+			display: inline-block;
+			float: left;
+			margin-right:20px;
+			margin-bottom:10px;
+			i{
+				color:  rgba(186, 186, 186, 0.87);
+				font-size: 14px; /* Approximation due to font substitution */
+				font-weight: 400;
+			}
+		}
+	}
+}
+
+	
+
+
+
+

@@ -1,5 +1,6 @@
 from flask import render_template, flash, redirect,jsonify,request
-from app import app
+from app import app,db
+from models.usermodel import User
 from .forms import LoginForm
 @app.route('/')
 @app.route('/index')
@@ -14,7 +15,11 @@ def login():
 	name=request.json['name']
 	email=request.json['email']
 	password=request.json['password']
-	# print username
+	u = User(name=name,
+ 	                  email=email,
+ 	                  password=password)
+	db.session.add(u)
+	db.session.commit()
 	return jsonify(name=name,
                    email=email,
                    password=password)
