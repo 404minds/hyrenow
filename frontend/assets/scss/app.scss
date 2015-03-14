@@ -256,6 +256,24 @@
 			background-color:#9575cd;
 		}
 	}
+
+	.hynow-dropdown {
+		border-radius: 3px;
+		border-width: 1px;
+		border-color:  #cfd8dc;
+		border-style: solid;
+		background-color:  #ffffff;
+		height: 58px;
+		&.day{
+			width: 50px;
+		}
+		&.month{
+			width: 90px;
+		}
+		&.year{
+			width: 70px;
+		}
+	}
 		
 	.login-wrapper{
 		margin-top:80px;
@@ -410,6 +428,7 @@
 
 	.tag-wrapper{
 		display: inline-block;
+		padding: 0 15px;
 		.tag{
 			padding: 16px 13px 16px 13px;
 			border-radius: 3px;
@@ -418,12 +437,85 @@
 			float: left;
 			margin-right:20px;
 			margin-bottom:10px;
-			i{
+			i.fa-close{
+				padding-left: 16px;
 				color:  rgba(186, 186, 186, 0.87);
 				font-size: 14px; /* Approximation due to font substitution */
 				font-weight: 400;
 			}
 		}
+	}
+
+	.work-edu-saved{
+		.year-details{
+			text-align: right;		
+			.year-range{
+				font-family: Roboto;
+				color: #512da8;
+				font-size: 24px;
+				font-weight: 500;
+			}
+			.duration{
+				font-family: Roboto;
+				color:  rgba(0, 0, 0, 0.54);
+				font-size: 14px; /* Approximation due to font substitution */
+				font-weight: 500;
+			}
+		}
+		.other-details{
+			text-align: left;
+			.organization{
+				font-family: Roboto;
+				color: rgba(0, 0, 0, 0.87);
+				font-size: 22px;
+				font-weight: 500;
+			}
+			.domain{
+				font-family: Roboto;
+				color: rgba(0, 0, 0, 0.87);
+				font-size: 16px;
+				font-weight: 400;
+			}
+			.description{
+				font-family: Roboto;
+				color: rgba(0, 0, 0, 0.54);
+				font-size: 16px;
+				font-weight: 400;
+			}
+		}
+		padding-bottom:60px;
+	}
+
+	.project-saved{
+		.project-name{
+			font-family: Roboto;
+			color: #512da8;
+			font-size: 24px;
+			font-weight: 500;
+			text-align: left;
+		}
+		.year-details{
+			font-family: Roboto;
+			color:  rgba(0, 0, 0, 0.54);
+			font-size: 14px; /* Approximation due to font substitution */
+			font-weight: 400;
+			text-align: right;
+		}
+		.link{
+			font-family: Roboto;
+			color: rgba(0, 0, 0, 0.54);
+			font-size: 14px;
+			font-weight: 500;
+			text-align: left;
+		}
+		.description{
+			font-family: Roboto;
+				color: #000000;
+				font-size: 14px;
+				font-weight: 300;
+				text-align: left;
+		}
+	padding-bottom:60px;
 	}
 }
 

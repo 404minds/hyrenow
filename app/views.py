@@ -1,11 +1,12 @@
-from flask import render_template, flash, redirect,jsonify,request
+from flask import render_template, flash, redirect,jsonify,request,session
 from app import app,db
 from models.usermodel import User
 from .forms import LoginForm
 @app.route('/')
 @app.route('/index')
 def index():
-	return jsonify(username="Kshitij2",
+	session['key'] = 'value'
+	return jsonify(username=session['key'],
                    email="kshitij.mittal01@gmail.com",
                    id="7")
 

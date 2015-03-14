@@ -6220,6 +6220,19 @@ th.hide-for-touch {
       padding: 15px 50px; }
     .main-container .hynow-submit.blue {
       background-color: #9575cd; }
+  .main-container .hynow-dropdown {
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: #cfd8dc;
+    border-style: solid;
+    background-color: #ffffff;
+    height: 58px; }
+    .main-container .hynow-dropdown.day {
+      width: 50px; }
+    .main-container .hynow-dropdown.month {
+      width: 90px; }
+    .main-container .hynow-dropdown.year {
+      width: 70px; }
   .main-container .login-wrapper {
     margin-top: 80px; }
     .main-container .login-wrapper .login-heading {
@@ -6333,7 +6346,8 @@ th.hide-for-touch {
         .main-container .user-profile-edit-container .user-profile-edit-wrapper .profile-section .content form .form-buttons button {
           margin-left: 20px; }
   .main-container .tag-wrapper {
-    display: inline-block; }
+    display: inline-block;
+    padding: 0 15px; }
     .main-container .tag-wrapper .tag {
       padding: 16px 13px 16px 13px;
       border-radius: 3px;
@@ -6342,8 +6356,68 @@ th.hide-for-touch {
       float: left;
       margin-right: 20px;
       margin-bottom: 10px; }
-      .main-container .tag-wrapper .tag i {
+      .main-container .tag-wrapper .tag i.fa-close {
+        padding-left: 16px;
         color: rgba(186, 186, 186, 0.87);
         font-size: 14px;
         /* Approximation due to font substitution */
         font-weight: 400; }
+  .main-container .work-edu-saved {
+    padding-bottom: 60px; }
+    .main-container .work-edu-saved .year-details {
+      text-align: right; }
+      .main-container .work-edu-saved .year-details .year-range {
+        font-family: Roboto;
+        color: #512da8;
+        font-size: 24px;
+        font-weight: 500; }
+      .main-container .work-edu-saved .year-details .duration {
+        font-family: Roboto;
+        color: rgba(0, 0, 0, 0.54);
+        font-size: 14px;
+        /* Approximation due to font substitution */
+        font-weight: 500; }
+    .main-container .work-edu-saved .other-details {
+      text-align: left; }
+      .main-container .work-edu-saved .other-details .organization {
+        font-family: Roboto;
+        color: rgba(0, 0, 0, 0.87);
+        font-size: 22px;
+        font-weight: 500; }
+      .main-container .work-edu-saved .other-details .domain {
+        font-family: Roboto;
+        color: rgba(0, 0, 0, 0.87);
+        font-size: 16px;
+        font-weight: 400; }
+      .main-container .work-edu-saved .other-details .description {
+        font-family: Roboto;
+        color: rgba(0, 0, 0, 0.54);
+        font-size: 16px;
+        font-weight: 400; }
+  .main-container .project-saved {
+    padding-bottom: 60px; }
+    .main-container .project-saved .project-name {
+      font-family: Roboto;
+      color: #512da8;
+      font-size: 24px;
+      font-weight: 500;
+      text-align: left; }
+    .main-container .project-saved .year-details {
+      font-family: Roboto;
+      color: rgba(0, 0, 0, 0.54);
+      font-size: 14px;
+      /* Approximation due to font substitution */
+      font-weight: 400;
+      text-align: right; }
+    .main-container .project-saved .link {
+      font-family: Roboto;
+      color: rgba(0, 0, 0, 0.54);
+      font-size: 14px;
+      font-weight: 500;
+      text-align: left; }
+    .main-container .project-saved .description {
+      font-family: Roboto;
+      color: #000000;
+      font-size: 14px;
+      font-weight: 300;
+      text-align: left; }

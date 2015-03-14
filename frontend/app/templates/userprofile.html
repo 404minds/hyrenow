@@ -34,17 +34,25 @@
 		    			<span>Job Preference</span>
 		    		</div>
 		    		<div class="content">
-		    			<form data-abide id="job-pref-form">
+		    			<form id="job_pref_form">
 			    			<div class="large-6 columns">
-			                    <input type="text" class="hynow-input" id="login-email" placeholder="Current Location" required/>
-			                    <input type="text" class="hynow-input" id="login-password" placeholder="&#8377; Current Annual Salary" required/>
+			                    <div>
+				                    <input type="text" class="hynow-input" id="current_location_box" placeholder="Current Location" required/>
+				                    <div class="tag-wrapper large-12 columns">
+				                    	<div class="tag"><span>Bangalore</span><i class="fa fa-close"></i></div>
+			                    	</div>
+		                    	</div>
+			                    <input type="text" class="hynow-input" id="" placeholder="&#8377; Current Annual Salary" required/>
 		                    </div>
 		                    
 		                    <div class="large-6 columns">
-			                    <input type="text" class="hynow-input" id="login-email" placeholder="Desired Location" required/>
+			                    <input type="text" class="hynow-input" id="desired_location_box" placeholder="Desired Location" required/>
+			                    <div class="tag-wrapper large-12 columns">
+			                    	<div class="tag"><span>Bangalore</span><i class="fa fa-close"></i></div>
+		                    	</div>
 			                    <input type="text" class="hynow-input" id="login-password" placeholder="&#8377; Expected Annual Salary" required/>
 		                    </div>
-		                    <div class="form-buttons">
+		                    <div class="form-buttons large-12 columns">
 		                        <button type="submit" class="small radius disabled"><span>Save</span></button>
 		                        <button class="small secondary radius disabled"><span>Cancel</span></button>
 	                        </div>
@@ -54,21 +62,132 @@
 
 		    	<div class="row profile-section">
 		    		<div class="heading">
-		    			<span>Education & Experience</span>
+		    			<span>Work Experience</span>
 		    		</div>
 		    		<div class="content">
-		    			<form data-abide id="job-pref-form">
+		    		
+			    			<div class="large-12 columns work-edu-saved">
+			    				<div class="row">
+			    					<div class="large-6 columns year-details">
+			    						<div class="year-range">2010-2014</div>
+			    						<div class="duration">4 years</div>
+		    						</div>
+			    					<div class="large-6 columns other-details">
+			    						<div class="organization">SignEasy Technologies</div>
+			    						<div class="domain">Full Stack Developer</div>
+			    						<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.</div>
+		    						</div>
+		    					</div>
+		    					<div class="row">
+			    					<div class="large-6 columns year-details">
+			    						<div class="year-range">2010-2014</div>
+			    						<div class="duration">4 years</div>
+		    						</div>
+			    					<div class="large-6 columns other-details">
+			    						<div class="organization">GrexIt Inc.</div>
+			    						<div class="domain">GLU</div>
+			    						<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.</div>
+		    						</div>
+		    					</div>
+		    				</div>
+
+		    			<form id="">
 			    			<div class="large-6 columns">
-			                    <input type="text" class="hynow-input" id="login-email" placeholder="Company/Institute" required/>
+			                    <input type="text" class="hynow-input" id="" placeholder="Company" required/>
 		                    </div>
 		                    
 		                    <div class="large-6 columns">
-			                    <input type="text" class="hynow-input" id="login-email" placeholder="Designation/Course" required/>
+			                    <input type="text" class="hynow-input" id="" placeholder="Designation" required/>
 		                    </div>
 		                    <div class="large-12 columns">
-		                    	<textarea placeholder="Description" class="hynow-desc-input"/>
+		                    	<textarea placeholder="What did you do there?" class="hynow-desc-input"/>
 		                    </div>
-		                    <div class="form-buttons">
+		                    <div class="large-4 columns">
+
+			                    <span class="input-label"> From </span> 
+								<select type="text" class="hynow-dropdown month month-dropdown">
+									<option>January</option>
+								</select>
+								<select type="text" class="hynow-dropdown year year-dropdown" >
+								</select>
+							</div>
+							<div class="large-4 columns end">
+
+			                    <span class="input-label"> To </span> 
+								<select type="text" class="hynow-dropdown month month-dropdown">
+								</select>
+								<select type="text" class="hynow-dropdown year year-dropdown" >
+								</select>
+							</div>
+		                    <div class="form-buttons large-12 columns">
+		                        <button type="submit" class="small radius disabled"><span>Save</span></button>
+		                        <button class="small secondary radius disabled"><span>Cancel</span></button>
+	                        </div>
+	                </form>
+		    		</div>
+		    	</div>
+
+		    	<div class="row profile-section">
+		    		<div class="heading">
+		    			<span>Education</span>
+		    		</div>
+		    		<div class="content">
+		    				<div class="large-12 columns work-edu-saved">
+			    				<div class="row">
+			    					<div class="large-6 columns year-details">
+			    						<div class="year-range">2010-2014</div>
+			    						<div class="duration">4 years</div>
+		    						</div>
+			    					<div class="large-6 columns other-details">
+			    						<div class="organization">Indian Institute of Information Technology, Allahabad</div>
+			    						<div class="domain">Information Technology</div>
+			    						<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.</div>
+		    						</div>
+		    					</div>
+		    					<div class="row">
+			    					<div class="large-6 columns year-details">
+			    						<div class="year-range">2010-2014</div>
+			    						<div class="duration">4 years</div>
+		    						</div>
+			    					<div class="large-6 columns other-details">
+			    						<div class="organization">Indian Institute of Information Technology, Allahabad</div>
+			    						<div class="domain">Information Technology</div>
+			    						<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.</div>
+		    						</div>
+		    					</div>
+		    				</div>
+
+		    			<form id="edu-form">
+			    			<div class="large-6 columns">
+			                    <input type="text" class="hynow-input" id="" placeholder="Institute" required/>
+			                    <input type="text" class="hynow-input" id="" placeholder="Course" required/>
+		                    </div>
+		                    
+		                    <div class="large-6 columns">
+			                    <input type="text" class="hynow-input" id="" placeholder="Location" required/>
+			                    <input type="text" class="hynow-input" id="" placeholder="Field of Study" required/>
+		                    </div>
+		                    <div class="large-12 columns">
+		                    	<textarea placeholder="What did you do there?" class="hynow-desc-input"/>
+		                    </div>
+							<div class="large-4 columns">
+
+			                    <span class="input-label"> From </span> 
+								<select type="text" class="hynow-dropdown month month-dropdown">
+									<option>January</option>
+								</select>
+								<select type="text" class="hynow-dropdown year year-dropdown" >
+								</select>
+							</div>
+							<div class="large-4 columns end">
+
+			                    <span class="input-label"> To </span> 
+								<select type="text" class="hynow-dropdown month month-dropdown">
+								</select>
+								<select type="text" class="hynow-dropdown year year-dropdown" >
+								</select>
+							</div>
+		                    <div class="form-buttons large-12 columns">
 		                        <button type="submit" class="small radius disabled"><span>Save</span></button>
 		                        <button class="small secondary radius disabled"><span>Cancel</span></button>
 	                        </div>
@@ -81,10 +200,12 @@
 		    			<span>Skills</span>
 		    		</div>
 		    		<div class="content">
-		    			<form data-abide id="job-pref-form">
+		    			<form id="skill_form">
 
-			    			<div class="large-6 columns">
-			                    <input type="text" class="hynow-input" id="login-email" placeholder="Add a Skill" required/>
+			    			<div class="large-12 columns">
+			    				<div class="large-6 columns">
+			                    <input type="text" class="hynow-input" id="skill_box" placeholder="Add a Skill" required/>
+		                    	</div>
 		                    </div>
 
 		                    <div class="tag-wrapper">
@@ -95,7 +216,7 @@
 		                    </div>
 
 		                
-		                    <div class="form-buttons">
+		                    <div class="form-buttons large-12 columns">
 		                        <button type="submit" class="small radius disabled"><span>Save</span></button>
 		                        <button class="small secondary radius disabled"><span>Cancel</span></button>
 	                        </div>
@@ -109,7 +230,26 @@
 		    			<span>Projects</span>
 		    		</div>
 		    		<div class="content">
-		    			<form data-abide id="projects-form">
+
+		    				<div class="large-12 columns project-saved">
+			    				<div class="row">
+			    					<div class="large-6 columns project-name">
+			    						GrexIt
+		    						</div>
+			    					<div class="large-6 columns year-details">
+			    						January,2012
+		    						</div>
+			    					<div class="large-12 columns link">
+			    						Vist Project Online
+		    						</div>
+			    					<div class="large-12 columns description">
+			    						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.
+		    						</div>
+		    					</div>
+		    				</div>
+
+
+		    			<form id="projects-form">
 			    			<div class="large-6 columns">
 			                    <input type="text" class="hynow-input" id="" placeholder="Project Name" required/>
 		                    </div>
@@ -120,7 +260,7 @@
 		                    <div class="large-12 columns">
 		                    	<textarea placeholder="Description" class="hynow-desc-input"/>
 		                    </div>
-		                    <div class="form-buttons">
+		                    <div class="form-buttons large-12 columns">
 		                        <button type="submit" class="small radius disabled"><span>Save</span></button>
 		                        <button class="small secondary radius disabled"><span>Cancel</span></button>
 	                        </div>
@@ -133,25 +273,31 @@
 		    			<span>Personal</span>
 		    		</div>
 		    		<div class="content">
-		    			<form data-abide id="personal-form" class="personal-form">
+		    			<form id="personal-form" class="personal-form">
 			    			<div class="large-6 columns">
 			                    <div class="large-4 columns">
 			                    	<span class="input-label">Phone No.</span> 
 			                    </div>
 			                    <div class="large-8 columns">
-			                    	<input type="text" class="hynow-input" id="login-email" placeholder="Phone No." required/>
+			                    	<input type="text" class="hynow-input" id="" placeholder="Phone No." required/>
 			                    </div>
 		                    </div>
 		                    
 		                    <div class="large-6 columns">
-			                    <div class="large-4 columns">
+			                    <div class="large-3 columns">
 			                    	<span class="input-label"> DOB </span> 
 			                    </div>
-			                    <div class="large-8 columns">
-			                    	<input type="text" id="datepicker-12" class="hynow-input" placeholder="Date of Birth">
+			                    <div class="large-9 columns">
+			                    	<select type="text" class="hynow-dropdown day day-dropdown">
+			                    	</select>
+			                    	<select type="text" class="hynow-dropdown month month-dropdown">
+			                    		<option>January</option>
+			                    	</select>
+			                    	<select type="text" class="hynow-dropdown year year-dropdown" >
+			                    	</select>
 			                    </div>
 		                    </div>
-		                    <div class="form-buttons">
+		                    <div class="form-buttons large-12 columns">
 		                        <button type="submit" class="small radius disabled"><span>Save</span></button>
 		                        <button class="small secondary radius disabled"><span>Cancel</span></button>
 	                        </div>
@@ -164,7 +310,7 @@
 		    			<span>Social Links</span>
 		    		</div>
 		    		<div class="content">
-		    			<form data-abide id="job-pref-form">
+		    			<form id="">
 			    			<div class="large-6  columns">
 			                    <div>
 				                    <div class="social-icon facebook">
@@ -203,7 +349,7 @@
 		                    	</div>
 		                    </div>
 
-		                    <div class="form-buttons">
+		                    <div class="form-buttons large-12 columns">
 		                        <button type="submit" class="small radius disabled"><span>Save</span></button>
 		                        <button class="small secondary radius disabled"><span>Cancel</span></button>
 	                        </div>

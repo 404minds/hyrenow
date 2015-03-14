@@ -13,5 +13,6 @@ var signupjs = function(signupHTML) {
                 request_data:{name:name,email:email,password:password},
                 type:"POST"
             });
+             app_router.navigate( "user/profile",{trigger: true});
         });
 }
