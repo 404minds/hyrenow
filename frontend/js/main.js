@@ -10,6 +10,8 @@ require(
         "../node_modules/requirejs-text/text!../app/templates/login.html",
         "login",
         "../node_modules/requirejs-text/text!../app/templates/userprofile.html",
+        "usermodel",
+        "userview",
         "userprofile",
         "../node_modules/requirejs-text/text!../app/templates/partials/header.html"
     ],
@@ -28,17 +30,18 @@ require(
     app_router.on('route:signupRoute', function(actions) {
         console.log("in signup route");
         signupjs(signupHTML);
-    })
+    });
 
     app_router.on('route:loginRoute', function(actions) {
         console.log("in login route");
         loginjs(loginHTML);
-    })
+    });
 
     app_router.on('route:userProfileRoute', function(actions) {
         console.log("in profile route");
         userprofilejs(userProfileHTML,headerHTML);        
-    })
+    });
+
     Backbone.history.start();
 
     $(document).on('click', 'a[data-backbone]', function(e){
