@@ -9,49 +9,62 @@
     </div>
     
     <div class="main-container">
-	    <div class="row user-cover">
-	    	<div class="user-cover-main">
+	    <div class="user-cover">
+	    	<div class="row user-cover-main">
 	    		<div class="user-cover-pic large-4 columns">
 	    			<span class="user-cover-letter">K</span>
 	    		</div>
 	    		<div class="user-cover-details large-8 columns">
 	    			<span class="user-cover-name">Kshitij Mittal</span>
-	    			<span class="user-cover-onelnr">Full Stack Developer @ hyrenow</span>
-	    			<button class="large radius">Change Photo</button>
+	    			<div id="saved-onelnr-wrapper">
+		    			<span class="user-cover-onelnr" data-type="default-text" id="saved-onelnr">Describe Yourself..</span>
+		    			<div class="h-line">
+		    			</div>
+	    			</div>
+	    			<div id="editable-onelnr">
+	    			</div>
 	    		</div>
 	 	   	</div>
-	    	<div class="user-cover-desc">
-	    		<textarea class="user-edit-desc">Describe Yourself in 140 characters</textarea>
-	    		<span class="desc-ltr-left">140</span>
-	    	</div>
+
 	    </div>
 	        
 	    <div class="user-profile-edit-container">
 	    	<div class="user-profile-edit-wrapper">
-
 		    	<div class="row profile-section">
 		    		<div class="heading">
 		    			<span>Job Preference</span>
 		    		</div>
 		    		<div class="content">
 		    			<form id="job_pref_form">
-			    			<div class="large-6 columns">
-			                    <div>
-				                    <input type="text" class="hynow-input" id="current_location_box" placeholder="Current Location" required/>
+		    			<div class="large-12 columns">
+			    			
+			    			<div class="row">
+				    			<div class="large-6 columns">
+					                    <input type="text" class="hynow-input" id="current_location_box" placeholder="Current Location" required/>
+					                    <div class="tag-wrapper large-12 columns">
+					                     	<div class="tag"><span>Bangalore</span><i class="fa fa-close"></i></div>
+				                    	</div>
+			                    </div>
+
+				    			<div class="large-6 columns">
+				                    <input type="text" class="hynow-input" id="desired_location_box" placeholder="Desired Location" required/>
 				                    <div class="tag-wrapper large-12 columns">
 				                    	<div class="tag"><span>Bangalore</span><i class="fa fa-close"></i></div>
 			                    	</div>
-		                    	</div>
-			                    <input type="text" class="hynow-input" id="" placeholder="&#8377; Current Annual Salary" required/>
-		                    </div>
+			                    </div>
+
+			    			</div>
+
+			    			<div class="row">
+			                    <div class="large-6 columns">
+					                    <input type="text" class="hynow-input" id="" placeholder="&#8377; Current Annual Salary" required/>
+			                    </div>
+			                    <div class="large-6 columns">
+				                    <input type="text" class="hynow-input" id="login-password" placeholder="&#8377; Expected Annual Salary" required/>
+			                    </div>
+			    			</div>
+		    			</div>
 		                    
-		                    <div class="large-6 columns">
-			                    <input type="text" class="hynow-input" id="desired_location_box" placeholder="Desired Location" required/>
-			                    <div class="tag-wrapper large-12 columns">
-			                    	<div class="tag"><span>Bangalore</span><i class="fa fa-close"></i></div>
-		                    	</div>
-			                    <input type="text" class="hynow-input" id="login-password" placeholder="&#8377; Expected Annual Salary" required/>
-		                    </div>
 		                    <div class="form-buttons large-12 columns">
 		                        <button type="submit" class="small radius disabled"><span>Save</span></button>
 		                        <button class="small secondary radius disabled"><span>Cancel</span></button>
@@ -66,7 +79,7 @@
 		    		</div>
 		    		<div class="content">
 
-			    			<div class="large-12 columns work-edu-saved">
+			    			<div class="" id="work-saved">
 			    				<div class="row">
 			    					<div class="large-6 columns year-details">
 			    						<div class="year-range">2010-2014</div>
@@ -78,31 +91,26 @@
 			    						<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.</div>
 		    						</div>
 		    					</div>
-		    					<div class="row">
-			    					<div class="large-6 columns year-details">
-			    						<div class="year-range">2010-2014</div>
-			    						<div class="duration">4 years</div>
-		    						</div>
-			    					<div class="large-6 columns other-details">
-			    						<div class="organization">GrexIt Inc.</div>
-			    						<div class="domain">GLU</div>
-			    						<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.</div>
-		    						</div>
-		    					</div>
 		    				</div>
 
-		    			<form id="">
-			    			<div class="large-6 columns">
-			                    <input type="text" class="hynow-input" id="" placeholder="Company" required/>
-		                    </div>
-		                    
-		                    <div class="large-6 columns">
-			                    <input type="text" class="hynow-input" id="" placeholder="Designation" required/>
-		                    </div>
-		                    <div class="large-12 columns">
-		                    	<textarea placeholder="What did you do there?" class="hynow-desc-input"/>
-		                    </div>
-		                    <div class="large-4 columns">
+		    			<form id="work-form">
+			    			<div class="large-12 columns">
+				    			<div class="row">
+				                    <div class="large-6 columns">
+				                    <input type="text" class="hynow-input" id="work-company" placeholder="Company" required/>
+				                    </div>
+				                    <div class="large-6 columns">
+				                    <input type="text" class="hynow-input" id="work-designation" placeholder="Designation" required/>
+				                    </div>
+				    			</div>
+				    			<div class="row">
+				                    <div class="large-12 columns">
+				                    	<textarea placeholder="What did you do there?" id="work-description" class="hynow-desc-input"/>
+				                    </div>
+				    			</div>
+			    			</div>
+
+		                    <div class="large-4 columns" id="duration-from">
 
 			                    <span class="input-label"> From </span> 
 								<select type="text" class="hynow-dropdown month" data-type="month-dropdown">
@@ -111,7 +119,7 @@
 								<select type="text" class="hynow-dropdown year" data-type="year-dropdown">
 								</select>
 							</div>
-							<div class="large-4 columns end">
+							<div class="large-4 columns end" id="duration-to">
 
 			                    <span class="input-label"> To </span> 
 								<select type="text" class="hynow-dropdown month" data-type="month-dropdown">
@@ -132,44 +140,37 @@
 		    			<span>Education</span>
 		    		</div>
 		    		<div class="content">
-		    				<div class="large-12 columns work-edu-saved" id="work-edu-saved">
-			    				<div class="row">
-			    					<div class="large-6 columns year-details">
-			    						<div class="year-range">2010-2014</div>
-			    						<div class="duration">4 years</div>
-		    						</div>
-			    					<div class="large-6 columns other-details">
-			    						<div class="organization">Indian Institute of Information Technology, Allahabad</div>
-			    						<div class="domain">Information Technology</div>
-			    						<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.</div>
-		    						</div>
-		    					</div>
-		    					<div class="row">
-			    					<div class="large-6 columns year-details">
-			    						<div class="year-range">2010-2014</div>
-			    						<div class="duration">4 years</div>
-		    						</div>
-			    					<div class="large-6 columns other-details">
-			    						<div class="organization">Indian Institute of Information Technology, Allahabad</div>
-			    						<div class="domain">Information Technology</div>
-			    						<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.</div>
-		    						</div>
-		    					</div>
-		    				</div>
+		    				<div class="" id="edu-saved">
+			    			</div>
 
 		    			<form id="edu-form">
-			    			<div class="large-6 columns">
-			                    <input type="text" class="hynow-input" data-type="organization" id="" placeholder="Institute" required/>
-			                    <input type="text" class="hynow-input" data-type="course" id="" placeholder="Course" required/>
-		                    </div>
-		                    
-		                    <div class="large-6 columns">
-			                    <input type="text" class="hynow-input" data-type="location" id="" placeholder="Location" required/>
-			                    <input type="text" class="hynow-input" data-type="domain" id="" placeholder="Field of Study" required/>
-		                    </div>
-		                    <div class="large-12 columns">
-		                    	<textarea placeholder="What did you do there?" class="hynow-desc-input" data-type="description"/>
-		                    </div>
+		    			<div class="large-12 columns">
+							<div class="row">
+						        <div class="large-6 columns">
+			                    <input type="text" class="hynow-input" id="edu-college" placeholder="Institute" required/>
+						        </div>
+						        <div class="large-6 columns">
+			                    <input type="text" class="hynow-input" id="edu-course" placeholder="Course" required/>
+						        </div>
+							</div>
+
+							<div class="row">
+						        <div class="large-6 columns">
+				                    <input type="text" class="hynow-input" id="edu-location" placeholder="Location" required/>
+						        </div>
+						        <div class="large-6 columns">
+				                    <input type="text" class="hynow-input" id="edu-field" placeholder="Field of Study" required/>
+						        </div>
+							</div>
+
+							<div class="row">
+			                    <div class="large-12 columns">
+			                    	<textarea placeholder="What did you do there?" class="hynow-desc-input" id="edu-description"/>
+			                    </div>
+							</div>
+
+						</div>
+
 							<div class="large-4 columns" id="duration-from">
 
 			                    <span class="input-label"> From </span> 
@@ -230,36 +231,60 @@
 		    			<span>Projects</span>
 		    		</div>
 		    		<div class="content">
+							<div class="" id="project-saved-wrapper">
+			    				<div class="large-12 columns project-saved">
+				    				<div class="row">
+				    					<div class="large-6 columns project-name">
+				    						GrexIt
+			    						</div>
+				    					<div class="large-6 columns year-details">
+				    						January,2012
+			    						</div>
+				    					<div class="large-12 columns link">
+				    						Vist Project Online
+			    						</div>
+				    					<div class="large-12 columns description">
+				    						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.
+			    						</div>
+			    					</div>
+			    				</div>
 
-		    				<div class="large-12 columns project-saved">
-			    				<div class="row">
-			    					<div class="large-6 columns project-name">
-			    						GrexIt
-		    						</div>
-			    					<div class="large-6 columns year-details">
-			    						January,2012
-		    						</div>
-			    					<div class="large-12 columns link">
-			    						Vist Project Online
-		    						</div>
-			    					<div class="large-12 columns description">
-			    						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.
-		    						</div>
-		    					</div>
-		    				</div>
+			    			</div>
 
+		    			<form id="project-form">
 
-		    			<form id="projects-form">
-			    			<div class="large-6 columns">
-			                    <input type="text" class="hynow-input" id="" placeholder="Project Name" required/>
-		                    </div>
-		                    
-		                    <div class="large-6 columns">
-			                    <input type="text" class="hynow-input" id="" placeholder="URL" required/>
-		                    </div>
-		                    <div class="large-12 columns">
-		                    	<textarea placeholder="Description" class="hynow-desc-input"/>
-		                    </div>
+		    				<div class="large-12 columns">
+								<div class="row">
+								    <div class="large-6 columns">
+			                    		<input type="text" class="hynow-input" id="project-name" placeholder="Project Name" required/>
+								    </div>
+								    <div class="large-6 columns">
+			                    		<input type="text" class="hynow-input" id="project-link" placeholder="URL" required/>
+								    </div>
+								</div>
+								<div class="large-4 columns" id="duration-from">
+			                    	<span class="input-label"> From </span> 
+									<select type="text" class="hynow-dropdown month" data-type="month-dropdown">
+									<option>January</option>
+									</select>
+									<select type="text" class="hynow-dropdown year" data-type="year-dropdown" >
+									</select>
+								</div>
+								<div class="large-4 columns end" id="duration-to">
+			                    	<span class="input-label"> To </span> 
+									<select type="text" class="hynow-dropdown month" data-type="month-dropdown">
+									</select>
+									<select type="text" class="hynow-dropdown year" data-type="year-dropdown">
+									</select>
+								</div>
+								
+								<div class="row">
+				                    <div class="large-12 columns">
+				                    	<textarea placeholder="Description" class="hynow-desc-input" id="project-description"/>
+				                    </div>
+								</div>
+							</div>
+		    			
 		                    <div class="form-buttons large-12 columns">
 		                        <button type="submit" class="small radius disabled"><span>Save</span></button>
 		                        <button class="small secondary radius disabled"><span>Cancel</span></button>
@@ -310,43 +335,52 @@
 		    		</div>
 		    		<div class="content">
 		    			<form id="">
-			    			<div class="large-6  columns">
-			                    <div>
-				                    <div class="social-icon facebook">
-				                    	<i class="fa fa-facebook-square"></i>
+		    			<div class="large-12 columns">
+							<div class="row">
+							    <div class="large-6 columns">
+				                    <div>
+					                    <div class="social-icon facebook">
+					                    	<i class="fa fa-facebook-square"></i>
+					                    </div>
+					                    <div class="social-link">
+					                    	<input type="text" class="hynow-input" placeholder="Link to Facebook Profile" required/>
+					                    </div>
 				                    </div>
-				                    <div class="social-link">
-				                    	<input type="text" class="hynow-input" placeholder="Link to Facebook Profile" required/>
-				                    </div>
-			                    </div>
-			                    <div>
-				                    <div class="social-icon">
-				                    	<i class="fa fa-github-square"></i>
-				                    </div>
-				                    <div class="social-link">
-					                    <input type="text" class="hynow-input" id="login-password" placeholder="Link to GitHub Profile" required/>
+							    </div>
+							    <div class="large-6 columns">
+				                    <div>
+					                    <div class="social-icon">
+					                    	<i class="fa fa-github-square"></i>
+					                    </div>
+					                    <div class="social-link">
+						                    <input type="text" class="hynow-input" id="login-password" placeholder="Link to GitHub Profile" required/>
+				                    	</div>
 			                    	</div>
-		                    	</div>
-		                    </div>
-		                    
-		                    <div class="large-6  columns">
-			                    <div>
-				                    <div class="social-icon twitter">
-				                    	<i class="fa fa-twitter-square"></i>
+							    </div>
+							</div>
+							<div class="row">
+							    <div class="large-6 columns">
+				                    <div>
+					                    <div class="social-icon twitter">
+					                    	<i class="fa fa-twitter-square"></i>
+					                    </div>
+					                    <div class="social-link">
+					                    	<input type="text" class="hynow-input" placeholder="Link to Twitter Profile" required/>
+					                    </div>
 				                    </div>
-				                    <div class="social-link">
-				                    	<input type="text" class="hynow-input" placeholder="Link to Twitter Profile" required/>
-				                    </div>
-			                    </div>
-			                    <div>
-				                    <div class="social-icon">
-				                    	<i class="fa fa-linkedin-square"></i>
-				                    </div>
-				                    <div class="social-link">
-					                    <input type="text" class="hynow-input" id="login-password" placeholder="Link to LinkedIn Profile" required/>
+							    </div>
+							    <div class="large-6 columns">
+				                    <div>
+					                    <div class="social-icon">
+					                    	<i class="fa fa-linkedin-square"></i>
+					                    </div>
+					                    <div class="social-link">
+						                    <input type="text" class="hynow-input" id="login-password" placeholder="Link to LinkedIn Profile" required/>
+				                    	</div>
 			                    	</div>
-		                    	</div>
-		                    </div>
+							    </div>
+							</div>
+						</div>
 
 		                    <div class="form-buttons large-12 columns">
 		                        <button type="submit" class="small radius disabled"><span>Save</span></button>
@@ -362,14 +396,60 @@
 </div>
 </script>
 
+<script type="text/template" id="editOnelnrElement">
+<input name="temp" type="text" id="onelnr-input"/>
+<div class="desc-words columns large-3" id="desc-words">
+	<span class="desc-words-written" id="desc-words-written">0</span>
+	<span class="desc-words-total">/140</span>
+</div>
+<div class="desc-save large-9 columns">
+    <button type="submit" class="tiny radius disabled" id="desc-save"><span>Save</span></button>
+    <button class="tiny secondary radius disabled" id="desc-cancel"><span>Cancel</span></button>
+</div>
+</script>
+
 <script type="text/template" id="eduElement">
 <div class="large-6 columns year-details">
 	<div class="year-range"><%= from_year%> - <%=to_year%></div>
 	<div class="duration"> <%=to_year-from_year.toString()%> years</div>
 </div>
 <div class="large-6 columns other-details">
-	<div class="organization"><%= organization%> , <%= location%></div>
-	<div class="domain"><%=domain%></div>
+	<div class="organization"><%= college%> , <%= location%></div>
+	<div class="domain"><%=field%></div>
 	<div class="description"><%= description %></div>
 </div>
 </script>
+
+<script type="text/template" id="workElement">
+<div class="row">
+	<div class="large-6 columns year-details">
+		<div class="year-range"><%= from_year%> - <%=to_year%></div>
+		<div class="duration"><%=to_year-from_year.toString()%> years</div>
+	</div>
+	<div class="large-6 columns other-details">
+		<div class="organization"><%= company%></div>
+		<div class="domain"><%= designation%></div>
+		<div class="description"><%= description%></div>
+	</div>
+</div>
+</script>
+
+<script type="text/template" id="projectElement">
+
+<div class="row">
+	<div class="large-6 columns project-name">
+		<%=name%>
+	</div>
+	<div class="large-6 columns year-details">
+			<%=from_month%>, <%=from_year%> - <%=to_month%>, <%=to_year%>
+	</div>
+	<div class="large-12 columns link">
+		<%= link %>
+	</div>
+	<div class="large-12 columns description">
+	<%= description %>
+	</div>
+</div>
+
+</script>
+
