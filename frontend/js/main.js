@@ -1,6 +1,6 @@
 require(
     [
-        "../bower_components/jquery/dist/jquery.min.js",
+        "../bower_components/jquery/dst/jquery.min.js",
         "../bower_components/foundation/js/foundation.js",
         "../node_modules/requirejs-text/text!../app/templates/signup.html",
         "../node_modules/backbone/node_modules/underscore/underscore.js",
