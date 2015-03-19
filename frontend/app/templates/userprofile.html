@@ -11,10 +11,15 @@
     <div class="main-container">
 	    <div class="user-cover">
 	    	<div class="row user-cover-main">
-	    		<div class="user-cover-pic large-4 columns">
-	    			<span class="user-cover-letter">K</span>
-	    		</div>
-	    		<div class="user-cover-details large-8 columns">
+	    		<div class="large-2 medium-2 small-3 columns">
+		    		<div class="user-cover-pic">
+		    			<span class="user-cover-letter">K</span>
+		    		</div>
+		    		<div class="upload-photo">
+		    			<span>UPLOAD PHOTO</span>
+		    		</div>
+		    	</div>
+	    		<div class="user-cover-details large-10 medium-10 small-9 columns">
 	    			<span class="user-cover-name">Kshitij Mittal</span>
 	    			<div id="saved-onelnr-wrapper">
 		    			<span class="user-cover-onelnr" data-type="default-text" id="saved-onelnr">Describe Yourself..</span>
@@ -46,7 +51,7 @@
 				                    	</div>
 			                    </div>
 
-				    			<div class="large-6 columns">
+				    			<div class="large-6  columns">
 				                    <input type="text" class="hynow-input" id="desired_location_box" placeholder="Desired Location" required/>
 				                    <div class="tag-wrapper large-12 columns">
 				                    	<div class="tag"><span>Bangalore</span><i class="fa fa-close"></i></div>
@@ -76,6 +81,10 @@
 		    	<div class="row profile-section">
 		    		<div class="heading">
 		    			<span>Work Experience</span>
+		    			<div class="add-form-button" id="add-form-button">
+			    			<span class="plus-sign"><i class="fa fa-plus"></i></span>
+			    			<span class="add-text">Add</span>
+		    			</div>
 		    		</div>
 		    		<div class="content">
 
@@ -93,7 +102,7 @@
 		    					</div>
 		    				</div>
 
-		    			<form id="work-form">
+		    			<form id="work-form" class="displaynone">
 			    			<div class="large-12 columns">
 				    			<div class="row">
 				                    <div class="large-6 columns">
@@ -110,7 +119,7 @@
 				    			</div>
 			    			</div>
 
-		                    <div class="large-4 columns" id="duration-from">
+		                    <div class="large-6 medium-12 small-12 columns" id="duration-from">
 
 			                    <span class="input-label"> From </span> 
 								<select type="text" class="hynow-dropdown month" data-type="month-dropdown">
@@ -119,7 +128,7 @@
 								<select type="text" class="hynow-dropdown year" data-type="year-dropdown">
 								</select>
 							</div>
-							<div class="large-4 columns end" id="duration-to">
+							<div class="large-6	 medium-12 small-12 columns end" id="duration-to">
 
 			                    <span class="input-label"> To </span> 
 								<select type="text" class="hynow-dropdown month" data-type="month-dropdown">
@@ -138,12 +147,16 @@
 		    	<div class="row profile-section">
 		    		<div class="heading">
 		    			<span>Education</span>
+		    			<div class="add-form-button" id="add-form-button">
+			    			<span class="plus-sign"><i class="fa fa-plus"></i></span>
+			    			<span class="add-text">Add</span>
+		    			</div>
 		    		</div>
 		    		<div class="content">
 		    				<div class="" id="edu-saved">
 			    			</div>
 
-		    			<form id="edu-form">
+		    			<form id="edu-form" class="displaynone">
 		    			<div class="large-12 columns">
 							<div class="row">
 						        <div class="large-6 columns">
@@ -171,7 +184,7 @@
 
 						</div>
 
-							<div class="large-4 columns" id="duration-from">
+							<div class="large-6	 medium-12 small-12" id="duration-from">
 
 			                    <span class="input-label"> From </span> 
 								<select type="text" class="hynow-dropdown month" data-type="month-dropdown">
@@ -180,7 +193,7 @@
 								<select type="text" class="hynow-dropdown year" data-type="year-dropdown" >
 								</select>
 							</div>
-							<div class="large-4 columns end" id="duration-to">
+							<div class="large-6	 medium-12 small-12 end" id="duration-to">
 
 			                    <span class="input-label"> To </span> 
 								<select type="text" class="hynow-dropdown month" data-type="month-dropdown">
@@ -229,6 +242,10 @@
   				<div class="row profile-section">
 		    		<div class="heading">
 		    			<span>Projects</span>
+		    			<div class="add-form-button" id="add-form-button">
+			    			<span class="plus-sign"><i class="fa fa-plus"></i></span>
+			    			<span class="add-text">Add</span>
+		    			</div>
 		    		</div>
 		    		<div class="content">
 							<div class="" id="project-saved-wrapper">
@@ -251,7 +268,7 @@
 
 			    			</div>
 
-		    			<form id="project-form">
+		    			<form id="project-form" class="displaynone">
 
 		    				<div class="large-12 columns">
 								<div class="row">
@@ -262,7 +279,12 @@
 			                    		<input type="text" class="hynow-input" id="project-link" placeholder="URL" required/>
 								    </div>
 								</div>
-								<div class="large-4 columns" id="duration-from">
+								<div class="row">
+				                    <div class="large-12 columns">
+				                    	<textarea placeholder="Description" class="hynow-desc-input" id="project-description"/>
+				                    </div>
+								</div>
+								<div class="large-6	 medium-12 small-12 columns" id="duration-from">
 			                    	<span class="input-label"> From </span> 
 									<select type="text" class="hynow-dropdown month" data-type="month-dropdown">
 									<option>January</option>
@@ -270,7 +292,7 @@
 									<select type="text" class="hynow-dropdown year" data-type="year-dropdown" >
 									</select>
 								</div>
-								<div class="large-4 columns end" id="duration-to">
+								<div class="large-6	 medium-12 small-12 columns end" id="duration-to">
 			                    	<span class="input-label"> To </span> 
 									<select type="text" class="hynow-dropdown month" data-type="month-dropdown">
 									</select>
@@ -278,11 +300,6 @@
 									</select>
 								</div>
 								
-								<div class="row">
-				                    <div class="large-12 columns">
-				                    	<textarea placeholder="Description" class="hynow-desc-input" id="project-description"/>
-				                    </div>
-								</div>
 							</div>
 		    			
 		                    <div class="form-buttons large-12 columns">
@@ -409,11 +426,11 @@
 </script>
 
 <script type="text/template" id="eduElement">
-<div class="large-6 columns year-details">
+<div class="large-6 medium-6 small-6 columns year-details">
 	<div class="year-range"><%= from_year%> - <%=to_year%></div>
 	<div class="duration"> <%=to_year-from_year.toString()%> years</div>
 </div>
-<div class="large-6 columns other-details">
+<div class="large-6 medium-6 small-6 columns other-details">
 	<div class="organization"><%= college%> , <%= location%></div>
 	<div class="domain"><%=field%></div>
 	<div class="description"><%= description %></div>
@@ -422,11 +439,11 @@
 
 <script type="text/template" id="workElement">
 <div class="row">
-	<div class="large-6 columns year-details">
+	<div class="large-6 medium-6 small-6 columns year-details">
 		<div class="year-range"><%= from_year%> - <%=to_year%></div>
 		<div class="duration"><%=to_year-from_year.toString()%> years</div>
 	</div>
-	<div class="large-6 columns other-details">
+	<div class="large-6 medium-6 small-6 columns other-details">
 		<div class="organization"><%= company%></div>
 		<div class="domain"><%= designation%></div>
 		<div class="description"><%= description%></div>
@@ -437,10 +454,10 @@
 <script type="text/template" id="projectElement">
 
 <div class="row">
-	<div class="large-6 columns project-name">
+	<div class="large-6 medium-6 small-6 columns project-name">
 		<%=name%>
 	</div>
-	<div class="large-6 columns year-details">
+	<div class="large-6 medium-6 small-6 columns year-details">
 			<%=from_month%>, <%=from_year%> - <%=to_month%>, <%=to_year%>
 	</div>
 	<div class="large-12 columns link">

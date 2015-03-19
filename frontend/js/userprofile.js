@@ -8,7 +8,7 @@ var userprofilejs = function(userProfileHTML,headerHTML) {
 		value = i<10 ? "0" + i.toString() : i.toString()  
     	$('[data-type="day-dropdown"]').append($("<option></option>").attr("value",value).text(value));
 	}
-	for (i=2005;i>=1901;--i){
+	for (i=2015;i>=1901;--i){
     	$('[data-type="year-dropdown"]').append($("<option></option>").attr("value",i.toString()).text(i.toString()));
 	}
 
@@ -156,34 +156,38 @@ var userprofilejs = function(userProfileHTML,headerHTML) {
 	            projectGroup.add(new_project_row);
 	    });
 
-$("#saved-onelnr-wrapper").on('click',function(){
-		var replaceWith = $('#editOnelnrElement');      
-        var elem = $(this);
-        elem.hide();
+	$("#saved-onelnr-wrapper").on('click',function(){
+			var replaceWith = $('#editOnelnrElement');      
+	        var elem = $(this);
+	        elem.hide();
 
-        $("#editable-onelnr").html(replaceWith.html());
-        $("#editable-onelnr").find("#onelnr-input").focus();
+	        $("#editable-onelnr").html(replaceWith.html());
+	        $("#editable-onelnr").find("#onelnr-input").focus();
 
-        var words_written_elem = $("#desc-words #desc-words-written");
-        var saved_onelnr_elem = $(this).find("#saved-onelnr");
-        
-        $("#editable-onelnr input").on( "keyup", function(event) {
-        	words_written_elem.html($(this).val().length);
-    	});
-        $("#editable-onelnr #desc-cancel").on( "click", function(event) {
-        	$("#editable-onelnr").empty();
-        	elem.show();
-    	});
-    	$("#editable-onelnr #desc-save").on( "click", function(event) {
-     		//ajax call to save description
-        	var onelnr_text = $("#editable-onelnr input").val();
-        	if (onelnr_text.length == 0){
-        		onelnr_text = "Describe Yourself..";
-        	}
+	        var words_written_elem = $("#desc-words #desc-words-written");
+	        var saved_onelnr_elem = $(this).find("#saved-onelnr");
+	        
+	        $("#editable-onelnr input").on( "keyup", function(event) {
+	        	words_written_elem.html($(this).val().length);
+	    	});
+	        $("#editable-onelnr #desc-cancel").on( "click", function(event) {
+	        	$("#editable-onelnr").empty();
+	        	elem.show();
+	    	});
+	    	$("#editable-onelnr #desc-save").on( "click", function(event) {
+	     		//ajax call to save description
+	        	var onelnr_text = $("#editable-onelnr input").val();
+	        	if (onelnr_text.length == 0){
+	        		onelnr_text = "Describe Yourself..";
+	        	}
 
-        	saved_onelnr_elem.html(onelnr_text);
-        	$("#editable-onelnr").empty();
-        	elem.show();
-    	});
-});
+	        	saved_onelnr_elem.html(onelnr_text);
+	        	$("#editable-onelnr").empty();
+	        	elem.show();
+	    	});
+	});
+
+	$(".profile-section").on('click','#add-form-button',function(){
+		$(this).parent().parent().find("form").show();
+	});
 }    
