@@ -9,5 +9,6 @@ class User (db.Model):
 	phone = db.Column(db.String(64), index = False, unique = False)
 	gender = db.Column(db.String(64), index = False, unique = False)
 	edu = db.relationship('Edu',backref='user', lazy='dynamic')
+	
 	def __repr__(self):
 		return '<User %r>' %(self.name)

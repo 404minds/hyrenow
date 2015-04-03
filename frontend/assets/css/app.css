@@ -6249,14 +6249,17 @@ th.hide-for-touch {
         text-align: left; }
   .main-container .user-cover .user-cover-main {
     display: block;
-    position: relative; }
+    position: relative;
+    width: 62%;
+    margin-bottom: 30px; }
     .main-container .user-cover .user-cover-main .user-cover-pic {
       border-radius: 50%;
       background-color: #bdbdbd;
       width: 128px;
       height: 128px;
       position: relative;
-      display: inline-block; }
+      display: block;
+      margin: 0 auto; }
       .main-container .user-cover .user-cover-main .user-cover-pic .user-cover-letter {
         font-family: Roboto;
         color: #ffffff;
@@ -6267,7 +6270,9 @@ th.hide-for-touch {
         top: 17%;
         left: 36%; }
     .main-container .user-cover .user-cover-main .upload-photo {
-      display: inline-block;
+      display: block;
+      margin: 0 auto;
+      padding-top: 15px;
       font-family: Roboto;
       color: #673ab7;
       font-size: 14px;
@@ -6309,6 +6314,12 @@ th.hide-for-touch {
         font-size: 13px;
         /* Approximation due to font substitution */
         font-style: italic; }
+      .main-container .user-cover .user-cover-main .user-cover-details .editable-onelnr input {
+        border: none;
+        box-shadow: none; }
+        .main-container .user-cover .user-cover-main .user-cover-details .editable-onelnr input:focus {
+          background-color: white;
+          border-bottom: 1px solid #e0e0e0; }
       .main-container .user-cover .user-cover-main .user-cover-details .user-change-pic {
         border-radius: 3px;
         border-width: 1px;

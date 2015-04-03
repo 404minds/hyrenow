@@ -2,10 +2,10 @@ require(
     [
         "../bower_components/jquery/dst/jquery.min.js",
         "../bower_components/foundation/js/foundation.js",
-        "../node_modules/requirejs-text/text!../app/templates/signup.html",
         "../node_modules/backbone/node_modules/underscore/underscore.js",
         "../node_modules/backbone/backbone.js",
         "utils",
+        "../node_modules/requirejs-text/text!../app/templates/signup.html",
         "signup",
         "../node_modules/requirejs-text/text!../app/templates/login.html",
         "login",
@@ -15,7 +15,7 @@ require(
         "userprofile",
         "../node_modules/requirejs-text/text!../app/templates/partials/header.html"
     ],
-    function( _jquery_, _foundation_, signupHTML,_underscore_,_backbone_,_utils_,_signup_,loginHTML,_login_,userProfileHTML,_userprofile_,headerHTML){
+    function( _jquery_, _foundation_,_underscore_,_backbone_,_utils_,signupHTML,_signup_,loginHTML,_login_,userProfileHTML,_usermodel_,_userview_,_userprofile_,headerHTML){
     var AppRouter = Backbone.Router.extend({
         routes: {
             "signup(/)": "signupRoute", 
@@ -36,7 +36,6 @@ require(
         console.log("in login route");
         loginjs(loginHTML);
     });
-
     app_router.on('route:userProfileRoute', function(actions) {
         console.log("in profile route");
         userprofilejs(userProfileHTML,headerHTML);        

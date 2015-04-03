@@ -123,7 +123,7 @@
 }					
 
 	.hy-all-benefits{
-				text-align: left ;
+		text-align: left ;
 		.hy-benefit{
 			float: none;
 			display: inline-block;
@@ -297,13 +297,16 @@
 		.user-cover-main{
 			display:block;
 			position: relative;
+			width:62%;
+			margin-bottom: 30px;
 			.user-cover-pic {
 				border-radius: 50%;
 				background-color:  #bdbdbd;
 				width: 128px;
 				height: 128px;
 				position:relative;
-				display:inline-block;
+				display:block;
+				margin: 0 auto;
 				.user-cover-letter {
 					font-family: Roboto;
 					color:  #ffffff;
@@ -315,7 +318,9 @@
 				}
 			}
 			.upload-photo{
-				display: inline-block;
+				display: block;
+				margin: 0 auto;
+				padding-top: 15px;
 				font-family: Roboto;
 				color:  #673ab7;
 				font-size: 14px;
@@ -358,6 +363,16 @@
 					color:  #bdbdbd;
 					font-size: 13px; /* Approximation due to font substitution */
 					font-style: italic;
+				}
+				.editable-onelnr{
+					input{
+						border: none;
+						box-shadow: none;
+						&:focus{
+							background-color: white;
+							border-bottom: 1px solid #e0e0e0;
+						}
+					}
 				}
 				.user-change-pic{
 					border-radius: 3px;

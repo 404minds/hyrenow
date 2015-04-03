@@ -8,7 +8,7 @@ var userprofilejs = function(userProfileHTML,headerHTML) {
 		value = i<10 ? "0" + i.toString() : i.toString()  
     	$('[data-type="day-dropdown"]').append($("<option></option>").attr("value",value).text(value));
 	}
-	for (i=2015;i>=1901;--i){
+	for (i=2015;i>=1950;--i){
     	$('[data-type="year-dropdown"]').append($("<option></option>").attr("value",i.toString()).text(i.toString()));
 	}
 
@@ -95,6 +95,15 @@ var userprofilejs = function(userProfileHTML,headerHTML) {
 
             allEdu.push(new_edu_row);
             eduGroup.add(new_edu_row);
+
+            utils.ajax({url:"/addedu",
+                request_data:{user_id:2,col_name:edu_college,
+                	desc:edu_description,degree:edu_course,
+                	start_date: from_month + "," + from_year,
+                	end_date: to_month + "," + to_year,
+                	},
+                type:"POST"
+            });
     });
 
 	$("#work-form").on("submit", function(e){
@@ -189,5 +198,10 @@ var userprofilejs = function(userProfileHTML,headerHTML) {
 
 	$(".profile-section").on('click','#add-form-button',function(){
 		$(this).parent().parent().find("form").show();
+	});
+
+	$(".profile-section").on('click','#cancel-form',function(e){
+		e.preventDefault();
+		$(this).parent().parent().hide();
 	});
 }    

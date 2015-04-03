@@ -17,15 +17,33 @@ require(
 			else {
 				type = "GET";
 			}
-			$.ajax({
-				url: url,
-				type: type,
-				data: JSON.stringify(data, null, '\t'),
-				contentType: 'application/json;charset=UTF-8',
-				success: function(msg){
-					console.log(msg);
-				}
-			})			
+			if(type == "GET") {
+					url = url + "?"; 
+					for(var i in data){
+						url = url + i + "=" + data[i] + "&";
+					}
+					url = url.substring(0,url.length - 1 );
+					console.log(url);
+				$.ajax({
+					url: url,
+					type: type,
+					contentType: 'application/json;charset=UTF-8',
+					success: function(msg){
+						console.log(msg);
+					}
+				})			
+			}
+			else {
+				$.ajax({
+					url: url,
+					type: type,
+					data: JSON.stringify(data, null, '\t'),
+					contentType: 'application/json;charset=UTF-8',
+					success: function(msg){
+						console.log(msg);
+					}
+				})
+			}
 		}
 		
 		var Utils = function(){

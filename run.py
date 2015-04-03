@@ -4,5 +4,5 @@ from app import app
 # app.wsgi_app = ProxyFix(app.wsgi_app)
 # app.run(debug=True)
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(port=8000,debug=True)
 
